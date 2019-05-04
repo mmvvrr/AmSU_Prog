@@ -19,6 +19,7 @@ int main()
 	f=fopen("points.dat", "wb");
 
 	n = rand()%10+10;
+	fwrite(&n, sizeof(int), 1, f);
 
 	cout << "Будет сгенерированно " << n << " точек" << endl;
 
