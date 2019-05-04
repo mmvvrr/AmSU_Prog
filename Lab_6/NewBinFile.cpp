@@ -5,12 +5,14 @@
 
 using namespace std;
 
+struct point { int x, y;};
+
 int main()
 {
 	srand(time(0));
 	setlocale(0, "");
 	int n, i;
-	int a;
+	point a;
 
 	FILE *f;
 
@@ -22,8 +24,9 @@ int main()
 
 	for (i = 0; i < n; i++)
 	{
-		a = i;
-		fwrite(&a, sizeof(int), 1, f); 
+		a.x = rand()% 100;
+		a.y = rand()% 100;
+		fwrite(&a, sizeof(point), 1, f); 
 	}
 
 	fclose(f);
