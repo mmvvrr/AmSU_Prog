@@ -1,42 +1,51 @@
 #include <iostream>
 #include <math.h>
 
+using namespace std;
+
+
+
 class triangle
 {
 private: 
-	{
 		float a, b, c;
 		float P, S;
-	}
 public:
-	triangle(float na, float nb, float nc)
+	
+	
+	triangle()	
 	{
-		a = na;
-		b = nb;
-		c = nc;
-
-		P = (1\2)*(a+b+c);
-		S = sqrt(P*(P-a)*(P-b)*(P-c))
-
-		cout << ""
+		a = 3;
+		b = 4;
+		c = 5;
+	}
+	triangle(float na, float nb, float nc): a(na), b(nb), c(nc){
 	}
 
-	triangle(int h)
+	triangle(int h, int s)
 	{
-		if (h == 1){
-			cout << "Периметр равен: " << P;
-		}
-		else{
-			cout << "Площадь равна: " << S;
-		}
+		a = rand()%h + s;
+		b = rand()%h + s;
+		c = rand()%h + s;
 	}
-
-	triangle()
-	{
-		cout << "Сторона A = " << a << endle 
-			 << "Сторона B = " << b << endle 
-			 << "Сторона C = " << c << endle 
-			 << "Периметр P = "<< P << endle 
-			 << "Площадь S = " << S << endle;
-	}	
+	
+	void getNaumbers(){
+		cout << "a = " << a << "d = " << b << "c = " << c << endl;
+		cout << "P = " << (a+b+c) << endl;
+		cout << "S = " << sqrt((a+b+c)*(b+c)*(a+c)*(b+c))
+	}
+	
 };
+
+int main()
+{
+	setlocale(0, "");
+	float da, db, dc;
+	cin >> da;
+	cin >> db;
+	cin >> dc;
+	
+	triangle obj;
+	
+	obj.getNaumbers();
+}
