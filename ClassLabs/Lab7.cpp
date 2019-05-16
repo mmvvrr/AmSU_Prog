@@ -1,5 +1,7 @@
 #include <iostream>
 #include <math.h>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
@@ -32,13 +34,15 @@ public:
 	void getNaumbers(){
 		cout << "a = " << a << "d = " << b << "c = " << c << endl;
 		cout << "P = " << (a+b+c) << endl;
-		cout << "S = " << sqrt((a+b+c)*(b+c)*(a+c)*(b+c))
+		cout << "S = " << sqrt((a+b+c)*(b+c)*(a+c)*(b+c));
 	}
 	
 };
 
 int main()
 {
+	srand(time(0));
+	
 	setlocale(0, "");
 	float da, db, dc;
 	cin >> da;
