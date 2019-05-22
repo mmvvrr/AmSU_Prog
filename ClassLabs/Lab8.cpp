@@ -83,21 +83,22 @@ int main()
 	float da, db, dc, dh;
 	int h, s, ch;
 	
-	cout << "Ââåäèòå ñòîðîíû òðåóãîëüíèêà è âûñîòó"<< endl;
-    cout << "Ââåäèòå a: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ñ€Ð¾Ð½Ñ‹ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° Ð¸ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ"<< endl;
+    cout << "Ð²ÐµÐ´Ð¸Ñ‚Ðµ a: ";
     cin >> da;
-    cout << "Ââåäèòå b: ";
+    cout << "Ð²ÐµÐ´Ð¸Ñ‚Ðµ b: ";
     cin >> db;
-    cout << "Ââåäèòå c: ";
+    cout << "Ð²ÐµÐ´Ð¸Ñ‚Ðµ c: ";
     cin >> dc;
-    cout << "Ââåäèòå h: ";
+    cout << "Ð²ÐµÐ´Ð¸Ñ‚Ðµ h: ";
     cin >> dh;
     pyramid obj(da, db, dc, dh);
     
     cout << "Volume = " << obj.volume() << endl;
-	cout << "Ïëîùàäü áîêîâîé ïîâåðõíîñòè = " << obj.squareSide() << endl;
+	cout << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ Ð±Ð¾ÐºÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸= " << obj.squareSide() << endl;
 	
 	
    system("pause")
    ;
+   return 0;
 }
