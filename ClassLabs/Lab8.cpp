@@ -102,3 +102,11 @@ int main()
    ;
    return 0;
 }
+
+/*
+Для выправки кодировки используется http://www.online-decoder.com/ru
+параметры декода
+ISO - 8859 - 1
+to 
+Windows - 1251
+*/
